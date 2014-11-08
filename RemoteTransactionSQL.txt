@@ -1,0 +1,15 @@
+CREATE TABLE `tbltransactrecord` (
+  `idtblTransactRecord` int(11) NOT NULL AUTO_INCREMENT,
+  `TransactionNo` varchar(45) NOT NULL,
+  `PaintColor` varchar(45) NOT NULL,
+  `Volume` varchar(45) NOT NULL,
+  `Price` double NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `TotalCost` double NOT NULL,
+  `Date` datetime NOT NULL,
+  `Branch` varchar(45) NOT NULL,
+  `Cashier` varchar(45) NOT NULL,
+  `State` varchar(45) NOT NULL,
+  `Comment` longtext,
+  PRIMARY KEY (`idtblTransactRecord`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
