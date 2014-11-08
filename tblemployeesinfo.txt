@@ -1,0 +1,9 @@
+CREATE TABLE `tblemployeesinfo` (
+  `EID` varchar(45) NOT NULL,
+  `First Name` text NOT NULL,
+  `Middle Name` text,
+  `Last Name` text NOT NULL,
+  `UserName` text NOT NULL,
+  `Password` text NOT NULL,
+  PRIMARY KEY (`EID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
