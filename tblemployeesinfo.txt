@@ -1,9 +1,9 @@
 CREATE TABLE `tblemployeesinfo` (
-  `EID` varchar(45) NOT NULL,
-  `First Name` text NOT NULL,
-  `Middle Name` text,
-  `Last Name` text NOT NULL,
+  `EID` int(11) NOT NULL AUTO_INCREMENT,
+  `FullName` text NOT NULL,
   `UserName` text NOT NULL,
   `Password` text NOT NULL,
-  PRIMARY KEY (`EID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Date` date NOT NULL COMMENT 'Date Registered',
+  PRIMARY KEY (`EID`),
+  UNIQUE KEY `EID_UNIQUE` (`EID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
